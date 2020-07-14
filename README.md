@@ -90,3 +90,15 @@ public class Example : MonoBehaviour
     }
 }
 ```
+
+## PlayerMovement
+Simple third person movement controller for the player.
+
+### Setup
+  - Add the PlayerMovement component to the root of the game object that will be the player.
+  - The CharacterController component will be added automatically to the same game object.
+  - Set the movement speed and the rotation speed on the inspector.
+
+### You can also
+  - Define if the player should face to the direction of the movement by checking the Turn To Direction property on the inspector.
+  - Subscribe your script to the OnMovement<bool> callback to receive a Boolean when the player is moving (true) or stopped (false).
